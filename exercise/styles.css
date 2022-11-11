@@ -9,12 +9,7 @@ nav ul {
 }
 
 nav ul button {
-    list-style: none;
-    width: 30%;
-    background-color: #00afef;
-    border-radius: 5px;
-    text-align: center;
-    line-height: 50px;
+    line-height: 25px;
 }
 
 header img {
@@ -42,7 +37,7 @@ main li:before {
 main, section, footer {
     background-color: #ffffff;
     border-radius: 5px;
-    padding: 20px;
+    padding: 10px;
 }
 
 .button { /* used for store link in "Get refreshed" section */
@@ -63,20 +58,29 @@ main, section, footer {
 
 #menu {
     grid-area: menu;
+    /* display: flex;
+    flex: 1;
+    justify-content: space-between; */
 }
 #title {
     grid-area: title;
-}
-#facts {
-    grid-area: facts;
     display: flex;
+}
+#main {
+    padding: 20px;
+    grid-area: main;
+    display: flex;
+    align-items: center;
 }
 #event {
     grid-area: event;
+    display: flex;
+    flex-direction: row;
 }
 #promo {
     grid-area: promo;
 }
+
 #footer {
     grid-area: footer;
 }
@@ -84,13 +88,9 @@ main, section, footer {
     display: grid;
     grid-template-areas:
     "title  menu"
-    "facts  facts"
+    "main   main"
     "event  promo"
     "footer footer";
     grid-template-columns: 1fr 1fr;
     grid-gap: 8px;
 }
-
-/* #facts > h2 and ul {
-    display: flex;
-} */
