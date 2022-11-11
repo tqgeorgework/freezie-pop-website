@@ -9,43 +9,45 @@
     <link rel="icon" href="images/blue-pop.png"/>
 </head>
 <body class="contact-container">
-    <nav id="menu">
+    <header id="contact-title">
+        <img src="images/blue-pop.png">
+        <h1>Fred's Frozen Pops</h1>
+    </header>
+    <nav id="contact-menu">
         <ul>
             <button id="home" class="button">HOME</button>
             <button id="store" class="button">STORE</button>
             <button id="contact" class="button">CONTACT US</button>
         </ul>
     </nav>
-    <header id="title">
-        <img src="images/blue-pop.png">
-        <h1>Fred's Frozen Pops</h1>
-    </header>
+    
     <main id="contact-form">
         <h2>Contact Us</h2>
         <form method="POST" action="http://www.example.com/contact">
             <div>
                 <label for="name">Name</label><br>
                 <input type="text" name="name" id="name">
-            </div>
+            </div><br>
+            
 
             <div>
                 <label for="name">How did you hear of us?</label><br>
                 <input type="" name="" id="">
-            </div>
+            </div><br>
 
             <div>
                 <label for="favorite-color">What color is your favorite frozen pop?</label><br>
                 <input type="color" name="favorite-color" id="favorite-color" value="#00afef" cols="40">
-            </div>
+            </div><br>
 
             <div>
                 <label for="comments">Please let us know any comments you have:</label><br>
                 <textarea name="comments" id= "comments" rows="8" cols="60"></textarea>
-            </div>
+            </div><br>
 
             <div>
                 <label for="submit"></label>
-                <input type="submit" name="submit" id= "submit">
+                <input class="button" type="submit" name="submit" id= "submit">
             </div>
 
 

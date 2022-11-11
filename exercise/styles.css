@@ -1,7 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #87CEEB;
-    margin-left: 15px;
+    
 }
 
 nav ul {
@@ -54,7 +54,6 @@ main, section, footer {
 }
 
 
-
 /* Flex and Grid below */
 
 #menu {
@@ -98,4 +97,105 @@ main, section, footer {
     "footer footer";
     grid-template-columns: 1fr 1fr;
     grid-gap: 8px;
+}
+
+.contact-container{
+    display: grid;
+    grid-gap: 8px;
+    grid-template-areas: 
+    'ctitle cmenu'
+    'contact contact'
+    'footer footer';
+}
+
+#contact-form{
+    grid-area: contact;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1 ;
+}
+
+#contact-menu{
+    grid-area: cmenu;
+}
+
+#contact-title{
+    grid-area: ctitle;
+    display: flex;
+}
+
+#submit{
+    color: white;
+    text-transform: capitalize;
+    width: 200px;
+}
+
+h2{
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 800px) {
+    
+.container{
+    display: flex;
+    flex-direction: column;
+    grid-gap:4px;
+    margin: 5px;
+}
+
+#main{
+    flex-direction: column;
+    padding: 10px;
+}
+
+#main > img{
+    height:250px;
+    width: 100%;
+    justify-self: center;
+    margin: 0;
+}
+
+.button{
+    width: 120px;
+    padding: 0%;
+}
+
+nav ul{
+    padding: 0%;
+}
+h1{
+    font-size: 24px;
+}
+
+h2{
+    font-size: 18px;
+
+}
+p{
+    font-size: 12px;
+}
+li{
+    font-size: 12px;
+}
+
+#event > img{
+    height: 100px;
+    width: auto;
+}
+
+
+.contact-container{
+    display: flex;
+    flex-direction: column;
+}
+
+#comments{
+    width: 85%;
+}
+
+#submit{
+    padding: 10px;
+}
+
 }
