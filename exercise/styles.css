@@ -58,9 +58,6 @@ main, section, footer {
 
 #menu {
     grid-area: menu;
-    /* display: flex;
-    flex: 1;
-    justify-content: space-between; */
 }
 #title {
     grid-area: title;
@@ -79,6 +76,13 @@ main, section, footer {
 }
 #promo {
     grid-area: promo;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#promo > p {
+    align-self: flex-start;
 }
 
 #footer {
