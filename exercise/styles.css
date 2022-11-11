@@ -8,7 +8,7 @@ nav ul {
     padding: 20px 0 0 0;
 }
 
-nav ul li {
+nav ul button {
     list-style: none;
     width: 30%;
     background-color: #00afef;
@@ -45,13 +45,52 @@ main, section, footer {
     padding: 20px;
 }
 
-.store-button { /* used for store link in "Get refreshed" section */
+.button { /* used for store link in "Get refreshed" section */
     width: 25%;
     padding: 10px;
     border-radius: 5px;
+    border-color: #00afef;
     color: #000000;
     background-color: #00afef;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
 }
+
+
+
+/* Flex and Grid below */
+
+#menu {
+    grid-area: menu;
+}
+#title {
+    grid-area: title;
+}
+#facts {
+    grid-area: facts;
+    display: flex;
+}
+#event {
+    grid-area: event;
+}
+#promo {
+    grid-area: promo;
+}
+#footer {
+    grid-area: footer;
+}
+.container {
+    display: grid;
+    grid-template-areas:
+    "title  menu"
+    "facts  facts"
+    "event  promo"
+    "footer footer";
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 8px;
+}
+
+/* #facts > h2 and ul {
+    display: flex;
+} */
